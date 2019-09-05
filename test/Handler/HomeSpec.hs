@@ -11,4 +11,4 @@ spec = withApp $ do
         it "loads the index and checks it looks right" $ do
           get HomeR
           statusIs 200
-          htmlAnyContain "h1" "Hello, world!"
+          htmlAnyContain "h1" "Hello, World!"

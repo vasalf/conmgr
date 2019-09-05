@@ -16,4 +16,4 @@ import Import
 -- functions. You can spread them across multiple files if you are so
 -- inclined, or create a single monolithic file.
 getHomeR :: Handler Html
-getHomeR = defaultLayout [whamlet|<h1>Hello, world!|]
+getHomeR = defaultLayout $(widgetFile "homepage")
